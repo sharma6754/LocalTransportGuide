@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration</title>
+    <link rel="stylesheet" href="driverregister.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Trans Link Hub</div>
+    </header>
+    <div class="container">
+        <h2>Register as a Driver</h2>
+        <form id="driver-register-form">
+            <label for="driver-name">Name:</label>
+            <input type="text" id="driver-name" placeholder="Enter your name" required>
+
+            <label for="driver-phone">Phone:</label>
+            <input type="tel" id="driver-phone" placeholder="Enter your phone number" required>
+
+            <label for="vehicle-info">Vehicle Information:</label>
+            <input type="text" id="vehicle-info" placeholder="Enter your vehicle info" required>
+
+            <label for="from-city">From City:</label>
+            <select id="from-city" required>
+                <option value="" disabled selected>Select city</option>
+                <option value="Malakpet">Malakpet</option>
+                <option value="Malkajgiri">Malkajgiri</option>
+                <option value="Masab Tank">Masab Tank</option>
+                <option value="Jubilee Hills">Jubilee Hills</option>
+                <option value="Hitech City">Hitech City</option>
+                <option value="Wave Rock">Wave Rock</option>
+                <option value="Madhapur">Madhapur</option>
+                <option value="Kondapur">Kondapur</option>
+            </select>
+
+            <label for="to-city">To City:</label>
+            <select id="to-city" required>
+                <option value="" disabled selected>Select city</option>
+                <option value="Malakpet">Malakpet</option>
+                <option value="Malkajgiri">Malkajgiri</option>
+                <option value="Masab Tank">Masab Tank</option>
+                <option value="Jubilee Hills">Jubilee Hills</option>
+                <option value="Hitech City">Hitech City</option>
+                <option value="Wave Rock">Wave Rock</option>
+                <option value="Madhapur">Madhapur</option>
+                <option value="Kondapur">Kondapur</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="driverregister.js"></script>
+</body>
+</html>

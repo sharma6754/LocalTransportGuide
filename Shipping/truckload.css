@@ -1,0 +1,153 @@
+*{
+    margin:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background: linear-gradient(to right, #ffc300, #ff5733);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+header .logo {
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f60;
+    color: #fff;
+    cursor: pointer;
+    width: 100%; /* Make the button take up the full width of its container */
+    display: block; /* Ensure the button is a block-level element, so it respects width */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+button:hover {
+    background-color: #e55;
+}
+
+
+button:hover {
+    background-color: #e55;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.book-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.book-button:hover {
+    background-color: #45a049;
+}
+
+select {
+    width: calc(100% - 22px); 
+    display: block;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+i{
+    font-size: 50px;
+    color: #e55;
+}
+.H{
+    text-align: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRUCK PARTNER</title>
+    <link rel="stylesheet" href="truckload.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo name">TRANS LINK HUB</div>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../Help/help.html">Help</a></li>
+                <li><a href="../home/setting.html">Settings</a></li>
+                <li><a href="../home/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="H">
+        
+        <h1><i class='bx bxs-truck'></i>TRUCK PARTNER</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <select id="from">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <select id="to">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                    </select>
+                </div>
+                <button type="submit">Show Drivers</button>
+            </form>
+        </div>
+
+        <div class="results-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Driver Name</th>
+                        <th>Contact Number</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="drivers-list">
+                    <!-- Drivers will be listed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="truckload.js"></script>
+</body>
+</html>

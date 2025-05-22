@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Pooling</title>
+    <link rel="stylesheet" href="carpooling.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo name">TRANS LINK HUB</div>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../Help/help.html">Help</a></li>
+                <li><a href="../home/setting.html">Settings</a></li>
+                <li><a href="../home/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="H">
+            <h1><i class='bx bxs-car'></i>CAR POOLING</h1>
+        </div>
+        <div class="form-container">
+            <form id="search-form">
+                <label for="from">From:</label>
+                <select id="from" required>
+                    <option value="">Select a city</option>
+                    <option value="Malakpet">Malakpet</option>
+                    <option value="Malkajgiri">Malkajgiri</option>
+                    <option value="Masab Tank">Masab Tank</option>
+                    <option value="Jubilee Hills">Jubilee Hills</option>
+                    <option value="Hitech City">Hitech City</option>
+                    <option value="Wave Rock">Wave Rock</option>
+                    <option value="Madhapur">Madhapur</option>
+                    <option value="Kondapur">Kondapur</option>
+                </select>
+                <label for="to">To:</label>
+                <select id="to" required>
+                    <option value="">Select a city</option>
+                    <option value="Malakpet">Malakpet</option>
+                    <option value="Malkajgiri">Malkajgiri</option>
+                    <option value="Masab Tank">Masab Tank</option>
+                    <option value="Jubilee Hills">Jubilee Hills</option>
+                    <option value="Hitech City">Hitech City</option>
+                    <option value="Wave Rock">Wave Rock</option>
+                    <option value="Madhapur">Madhapur</option>
+                    <option value="Kondapur">Kondapur</option>
+                </select>
+                <button type="submit">Search Drivers</button>
+            </form>
+        </div>
+        <div class="register-button">
+            <button id="register-driver-button"><a href="../car pooling/driverregister.html">Register as Driver</a></button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Driver Name</th>
+                    <th>Contact Info</th>
+                    <th>Vehicle</th>
+                    <th>Fare</th>
+                    <th>Time</th>
+                    <th>Vacancies</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="drivers-list"></tbody>
+        </table>
+    </div>
+    <script src="carpooling.js"></script>
+</body>
+</html>

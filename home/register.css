@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.container label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.container button:hover {
+    background-color: #ee0979;
+}
+
+.options-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.option {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.option img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.option h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.option p {
+    color: #ff6a00;
+}
+
+.option:hover {
+    transform: translateY(-10px);
+}
+
+.container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Transport Friend</title>
+    <link rel="stylesheet" href="bus.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbq6SITvCy4MrAiZshbEaTX72ySSIu8eQ" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo name">TRANS LINK HUB</div>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../Help/help.html">Help</a></li>
+                <li><a href="../home/setting.html">Settings</a></li>
+                <li><a href="../home/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="H">
+        <h1> <i class='bx bxs-bus'></i> TRANSPORT BUDDY</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form id="route-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <select id="from">
+                        <option value="" disabled selected>Select starting location</option>
+                        <option value="Sangareddy">Sangareddy</option>
+                        <option value="Bachupally">Bachupally</option>
+                        <option value="LB Nagar">LB Nagar</option>
+                        <option value="Uppal">Uppal</option>
+                        <option value="Kondapur">Kondapur</option>
+                        <option value="Ameerpet">Ameerpet</option>
+                        <option value="KPHB">KPHB</option>
+                        <option value="Gachibowli">Gachibowli</option>
+                        <option value="Banjara Hills">Banjara Hills</option>
+                        <option value="Jubilee Hills">Jubilee Hills</option>
+                        <option value="Secunderabad">Secunderabad</option>
+                        <option value="Madhapur">Madhapur</option>
+                        <option value="Hitec City">Hitec City</option>
+                        <option value="Dilsukhnagar">Dilsukhnagar</option>
+                        <option value="Charminar">Charminar</option>
+                        <option value="Begumpet">Begumpet</option>
+                        <option value="Balanagar">Balanagar</option> <!-- Added Balanagar -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <select id="to">
+                        <option value="" disabled selected>Select destination location</option>
+                        <option value="Sangareddy">Sangareddy</option>
+                        <option value="Bachupally">Bachupally</option>
+                        <option value="LB Nagar">LB Nagar</option>
+                        <option value="Uppal">Uppal</option>
+                        <option value="Kondapur">Kondapur</option>
+                        <option value="Ameerpet">Ameerpet</option>
+                        <option value="KPHB">KPHB</option>
+                        <option value="Gachibowli">Gachibowli</option>
+                        <option value="Banjara Hills">Banjara Hills</option>
+                        <option value="Jubilee Hills">Jubilee Hills</option>
+                        <option value="Secunderabad">Secunderabad</option>
+                        <option value="Madhapur">Madhapur</option>
+                        <option value="Hitec City">Hitec City</option>
+                        <option value="Dilsukhnagar">Dilsukhnagar</option>
+                        <option value="Charminar">Charminar</option>
+                        <option value="Begumpet">Begumpet</option>
+                        <option value="Balanagar">Balanagar</option> <!-- Added Balanagar -->
+                    </select>
+                </div>
+                <button type="submit">Find Route</button>
+            </form>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="results-container">
+            <h2>Route Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Bus Number</th>
+                        <th>Time</th>
+                        <th>Start Time</th>
+                    </tr>
+                </thead>
+                <tbody id="route-details">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="bus.js"></script>
+</body>
+</html>
